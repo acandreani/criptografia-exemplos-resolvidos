@@ -51,11 +51,13 @@ def main() -> None:
     volume = volume_bytes(args.blocos, args.bits_bloco)
     transmissao = tempo_transmissao(args.blocos, 1e9, args.bits_bloco)
     print(f"\n{args.blocos} blocos de {args.bits_bloco} bits:")
+    print("  modelo: amostras independentes uniformes com reposição")
     print(f"  probabilidade de colisão ≈ {100 * prob:.3f}%")
     print(f"  volume = {volume} bytes")
     print(f"  transmissão a 10^9 bits/s = {transmissao:.3f} s")
+    print("A probabilidade acima não é probabilidade de quebra de uma cifra.")
+    print("O cenário 3DES usa força estimada; o modelo não executa encontro no meio.")
 
 
 if __name__ == "__main__":
     main()
-

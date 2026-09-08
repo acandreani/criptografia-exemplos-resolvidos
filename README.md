@@ -38,23 +38,21 @@ python encontro_05/exemplos_resolvidos/experimentar.py \
 python -m unittest discover -s encontro_05/exemplos_resolvidos -p "test_*.py" -v
 ```
 
-Para praticar antes de consultar a solução, complete os `TODO` em
-`encontro_05/codigo_inicial/` e execute:
-
-```bash
-python -m unittest discover -s encontro_05/codigo_inicial -p "test_*.py" -v
-```
-
 ## Encontro 6 — DES, 3DES e estimativas de segurança
 
 Em `encontro_06/exemplos_resolvidos/` estão os cálculos resolvidos do texto:
 
-- busca exaustiva para 56, 112 e 128 bits;
-- pior caso e caso médio;
-- efeito de máquinas paralelas;
-- probabilidade de colisão pelo paradoxo do aniversário;
-- conversão de blocos de 64 bits em volume e tempo;
-- estimativa didática do encontro no meio.
+Cada exemplo apresenta **enunciado → resolução em etapas → interpretação**.
+Veja o [roteiro do Encontro 6](encontro_06/README.md) para localizar as funções,
+entender os recursos de Python e experimentar novos dados.
+
+- Exemplo 1: função de rodada, larguras e oito S-boxes;
+- Exemplo 2: pior caso e média da busca DES, comparados a 128 bits;
+- Exemplo 3: conversão de blocos em volume e tempo;
+- Exemplo 4: resolução algébrica da composição e custo do encontro no meio.
+
+O programa de experimentação complementa as resoluções com paralelismo,
+estimativas para 112 bits e probabilidade pelo modelo do aniversário.
 
 Execute a sequência reproduzida no material:
 
@@ -107,4 +105,3 @@ ataques analíticos ou limites normativos de uso.
 - [NIST — FIPS 46-3 e retirada do DES](https://csrc.nist.gov/pubs/fips/46-3/final);
 - [NIST — retirada da recomendação do TDEA](https://www.nist.gov/news-events/news/2023/06/nist-withdraw-special-publication-800-67-revision-2);
 - [EFF — recuperação de uma chave DES em 56 horas](https://w2.eff.org/Privacy/Crypto/Crypto_misc/DESCracker/HTML/19980716_eff_des_faq.html).
-

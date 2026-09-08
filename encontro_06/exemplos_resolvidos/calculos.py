@@ -24,7 +24,11 @@ def _validar_positivo(nome: str, valor: float) -> None:
 
 
 def tentativas_media(bits_seguranca: int) -> int:
-    """Retorna metade do espaço de busca: ``2**(bits_seguranca - 1)``."""
+    """Aproxima a média por M/2; a média exata sem repetição é (M+1)/2.
+
+    Aqui M = 2**bits_seguranca, com posição uniforme da chave correta.
+    Para um nível abstrato de segurança, é apenas um modelo comparativo.
+    """
 
     _validar_pos_int("bits_seguranca", bits_seguranca)
     return 2 ** (bits_seguranca - 1)
@@ -74,7 +78,12 @@ def probabilidade_colisao(
     amostras: int,
     bits_bloco: int = 64,
 ) -> float:
-    """Calcula ``1-exp(-q(q-1)/(2*2**n))`` para o paradoxo do aniversário."""
+    """Aproxima repetições em amostras independentes uniformes com reposição.
+
+    Não calcula a probabilidade de quebra do DES nem de colisão entre entradas
+    distintas de uma permutação fixa. math.expm1(x) calcula exp(x)-1 com melhor
+    precisão perto de zero; -expm1(-a) equivale a 1-exp(-a).
+    """
 
     _validar_pos_int("amostras", amostras)
     _validar_pos_int("bits_bloco", bits_bloco)
@@ -127,4 +136,3 @@ def cenarios(
             "segundos": tempo_medio(128, taxa, maquinas),
         },
     ]
-

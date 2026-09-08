@@ -19,6 +19,9 @@ def titulo(numero: int, texto: str) -> None:
 
 def exemplo_1() -> None:
     titulo(1, "por que a cifra precisa ser uma permutação")
+    print("ENUNCIADO: Para 00->10, 01->00, 10->11 e 11->01, verifique se")
+    print("cada saída permite recuperar uma única entrada. Justifique.")
+    print("\nRESOLUÇÃO:")
     tabela = {0b00: 0b10, 0b01: 0b00, 0b10: 0b11, 0b11: 0b01}
     for entrada, saida in tabela.items():
         print(f"  {binario(entrada, 2)} -> {binario(saida, 2)}")
@@ -29,6 +32,9 @@ def exemplo_1() -> None:
 
 def exemplo_2() -> None:
     titulo(2, "uma rodada Feistel e sua inversão")
+    print("ENUNCIADO: Dados L=1010, R=0110 e F(R,K)=1100, calcule L' e R'.")
+    print("Depois recupere L e R sem inverter F. Todos os valores são binários.")
+    print("\nRESOLUÇÃO:")
     esquerda, direita, valor_f = 0b1010, 0b0110, 0b1100
     esquerda_saida = direita
     direita_saida = esquerda ^ valor_f
@@ -51,6 +57,9 @@ def exemplo_2() -> None:
 
 def exemplo_3() -> None:
     titulo(3, "duas rodadas e ordem inversa das subchaves")
+    print("ENUNCIADO: Cifre 00100101 em duas rodadas, com metades de 4 bits,")
+    print("subchaves 0011 e 0010, e F(R,K)=(R+K) mod 16. Depois decifre.")
+    print("\nRESOLUÇÃO:")
     bloco, subchaves, bits_metade = 0b00100101, [0b0011, 0b0010], 4
     print(f"Bloco inicial: {binario(bloco, 8)}")
     for etapa in trilha_cifragem(bloco, subchaves, bits_metade):
@@ -71,6 +80,10 @@ def exemplo_3() -> None:
 
 def exemplo_4() -> None:
     titulo(4, "medir o efeito avalanche")
+    print("ENUNCIADO: As entradas 10110010 e 10110011 produziram as saídas")
+    print("01101101 e 11000110. Conte os bits diferentes e sua porcentagem.")
+    print("Esse único caso demonstra segurança? As saídas são dados do enunciado.")
+    print("\nRESOLUÇÃO:")
     entrada, entrada_alterada = 0b10110010, 0b10110011
     saida, saida_alterada = 0b01101101, 0b11000110
     print(
