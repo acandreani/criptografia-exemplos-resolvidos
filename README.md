@@ -1,6 +1,6 @@
 # Exemplos resolvidos — Introdução à Criptografia
 
-Repositório público de apoio aos encontros 5 e 6 da disciplina **Introdução à
+Repositório público de apoio aos encontros 5, 6 e 7 da disciplina **Introdução à
 Criptografia**. Os programas reproduzem os cálculos e exemplos do material,
 permitem variar entradas e vêm acompanhados de testes automatizados.
 
@@ -76,6 +76,15 @@ bits. O modelo também não representa custo de memória, energia, comunicação
 ataques analíticos ou limites normativos de uso.
 
 ## Como estudar com os arquivos
+
+Veja também o [Encontro 7 — AES](encontro_07/README.md): cinco resoluções com
+estado, ShiftRows, XOR, multiplicação no corpo finito e MixColumns. Inclui
+experimentação com entradas variadas e testes de todos os pares de bytes.
+
+```bash
+python encontro_07/exemplos_resolvidos/exemplos_passo_a_passo.py
+python -m unittest discover -s encontro_07/exemplos_resolvidos -p "test_*.py" -v
+```
 
 1. Leia o exemplo resolvido e anote a fórmula antes de executar.
 2. Execute o programa sem modificá-lo e compare a saída com o PDF.
