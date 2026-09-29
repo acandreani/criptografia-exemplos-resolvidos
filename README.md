@@ -1,6 +1,6 @@
 # Exemplos resolvidos — Introdução à Criptografia
 
-Repositório público de apoio aos encontros 5, 6 e 7 da disciplina **Introdução à
+Repositório público de apoio aos encontros 5, 6, 7 e 8 da disciplina **Introdução à
 Criptografia**. Os programas reproduzem os cálculos e exemplos do material,
 permitem variar entradas e vêm acompanhados de testes automatizados.
 
@@ -10,7 +10,7 @@ permitem variar entradas e vêm acompanhados de testes automatizados.
 ## Requisitos
 
 - Python 3.10 ou mais recente;
-- nenhum pacote externo: os exemplos usam somente a biblioteca padrão;
+- biblioteca padrão nos modelos didáticos; o Exemplo 6 do Encontro 8 requer `cryptography`;
 - um terminal para executar os comandos.
 
 ## Baixar
@@ -76,6 +76,10 @@ bits. O modelo também não representa custo de memória, energia, comunicação
 ataques analíticos ou limites normativos de uso.
 
 ## Como estudar com os arquivos
+
+O [Encontro 8 — modos de operação](encontro_08/README.md) acrescenta seis
+resoluções: ECB, CBC com inversa, CTR, reuso/maleabilidade, preenchimento e
+AES-GCM. O guia explica funções, instalação, variação de entradas e testes.
 
 Veja também o [Encontro 7 — AES](encontro_07/README.md): cinco resoluções com
 estado, ShiftRows, XOR, multiplicação no corpo finito e MixColumns. Inclui
