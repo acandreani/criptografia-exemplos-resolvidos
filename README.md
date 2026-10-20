@@ -1,6 +1,6 @@
 # Exemplos resolvidos — Introdução à Criptografia
 
-Repositório público de apoio aos encontros 5, 6, 7, 8 e 9 da disciplina **Introdução à
+Repositório público de apoio aos encontros 5, 6, 7, 8, 9 e 10 da disciplina **Introdução à
 Criptografia**. Os programas reproduzem os cálculos e exemplos do material,
 permitem variar entradas e vêm acompanhados de testes automatizados.
 
@@ -76,6 +76,12 @@ bits. O modelo também não representa custo de memória, energia, comunicação
 ataques analíticos ou limites normativos de uso.
 
 ## Como estudar com os arquivos
+
+O [Encontro 10 — fundamentos de chave pública](encontro_10/README.md)
+inclui seis exemplos resolvidos: distribuição de chaves, potência modular,
+acordo de brinquedo, intermediário, limite RSA-OAEP e X25519/HKDF/AES-GCM.
+São doze testes positivos e negativos. Os exemplos usam `cryptography`,
+não autenticam a negociação e não constituem protocolo de produção.
 
 O [Encontro 9 — cifração autenticada](encontro_09/README.md) acrescenta seis
 resoluções sobre formato do registro, codificação sem ambiguidades, nonces,
