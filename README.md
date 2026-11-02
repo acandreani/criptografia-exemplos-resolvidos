@@ -1,6 +1,6 @@
 # Exemplos resolvidos — Introdução à Criptografia
 
-Repositório público de apoio aos encontros 5, 6, 7, 8, 9 e 10 da disciplina **Introdução à
+Repositório público de apoio aos encontros 5, 6, 7, 8, 9, 10 e 11 da disciplina **Introdução à
 Criptografia**. Os programas reproduzem os cálculos e exemplos do material,
 permitem variar entradas e vêm acompanhados de testes automatizados.
 
@@ -76,6 +76,11 @@ bits. O modelo também não representa custo de memória, energia, comunicação
 ataques analíticos ou limites normativos de uso.
 
 ## Como estudar com os arquivos
+
+O [Encontro 11 — RSA](encontro_11/README.md) traz seis exemplos resolvidos:
+inverso por Euclides, ida e volta por quadrados sucessivos, mensagem não coprima,
+maleabilidade, primo compartilhado e uso de RSA-OAEP/RSA-PSS. Inclui doze testes,
+entradas variáveis e explicação das bibliotecas antes da execução.
 
 O [Encontro 10 — fundamentos de chave pública](encontro_10/README.md)
 inclui seis exemplos resolvidos: distribuição de chaves, potência modular,
