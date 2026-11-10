@@ -77,6 +77,12 @@ ataques analíticos ou limites normativos de uso.
 
 ## Como estudar com os arquivos
 
+O [Encontro 12 — Diffie–Hellman e ElGamal](encontro_12/README.md) reúne sete
+exemplos com enunciados e etapas: ordem do grupo, acordo, intermediário,
+cifração com inverso, reuso/maleabilidade, validação e X25519/HKDF/AES-GCM.
+Inclui 15 testes e entradas variáveis. Não contém gabarito da lista nem do
+laboratório; o exemplo de biblioteca não autentica a negociação.
+
 O [Encontro 11 — RSA](encontro_11/README.md) traz seis exemplos resolvidos:
 inverso por Euclides, ida e volta por quadrados sucessivos, mensagem não coprima,
 maleabilidade, primo compartilhado e uso de RSA-OAEP/RSA-PSS. Inclui doze testes,
